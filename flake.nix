@@ -57,8 +57,8 @@ wasm = f"{ROOT_DIR}/wasm/fib."
 
 def lang_header(header):
     os.system(f"echo -e \"\n## {header}\n\" >> readme.md")
-    os.system('echo -e "| Language | Mean [s] | Min [s] | Max [s] | Relative |" >> readme.md')
-    os.system('echo -e "|:---|:---:|---:|---:|---:|" >> readme.md')
+    os.system('echo -e "| Language            |    Mean [s]    | Min [s] | Max [s] |         Relative |" >> readme.md')
+    os.system('echo -e "| :------------------ | :------------: | ------: | ------: | ---------------: |" >> readme.md')
 
 
 def run_bench(langDict, header):
