@@ -47,7 +47,6 @@ import os
 import shutil
 
 ROOT_DIR = os.getenv("DEVSHELL_ROOT")
-date = os.system('date "+%A, %B %d @ %I:%M%p %Z"')
 native = f"{ROOT_DIR}/native/fib."
 n_fib = f"{ROOT_DIR}/fib"
 interpreted = f"{ROOT_DIR}/interpreted/fib."
@@ -108,8 +107,7 @@ interpretedLang = {
     "Raku(Perl6)": f"${pkgs.rakudo}/bin/raku {interpreted}p6",
     "Python": f"${pkgs.python39}/bin/python {interpreted}py",
     "Ruby": f"${pkgs.ruby}/bin/ruby {interpreted}rb",
-    "Vimscript(NeoVim)": f"${pkgs.neovim}/bin/nvim -u NONE --clean -S {interpreted}vim --cmd 'quit'",
-    "Vimscript(Vim)": f"${pkgs.vim}/bin/vim -u NONE --clean -S {interpreted}vim --cmd 'quit'",
+    "Vimscript": f"${pkgs.vim}/bin/vim -u NONE --clean -S {interpreted}vim --cmd 'quit'",
     "Vimscript9": f"${pkgs.vim}/bin/vim -u NONE --clean -S {interpreted}vim9 --cmd 'quit'"
 }
 
@@ -126,7 +124,7 @@ wasmRuntimes = {
 }
 
 
-header = f""" # Language Benchmark
+header = """ # Language Benchmark
 The code performs a recursive fibonacci to the 40th position with the result of 102,334,155.
 This is the correct version where the sequence starts at 0.
 
@@ -144,7 +142,7 @@ b is an alias for the benchmark script that will update the readme.
 
 The benchmark uses hyperfine to run two warmup and ten real runs
 
-Last benchmark was ran on {date}
+Last benchmark was ran on Sunday, August 15 @ 11:25PM BST
 """
 
 os.system(f"echo -e \"{header}\" > readme.md")
