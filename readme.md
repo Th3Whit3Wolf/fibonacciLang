@@ -21,8 +21,8 @@ Last benchmark was ran on 0
 
 ## Natively Compiled
 
-| Language | Mean [s] | Min [s] | Max [s] |
-|:---|:---:|---:|---:|---:|
+| Language | Mean [s] | Min [s] | Max [s] | Relative |
+|:---|:---:|---:|---:|---:|---:|
 | `C` | 0.863 ± 0.011 | 0.851 | 0.889 | 3.01 ± 0.05 |
 | `C++` | 0.861 ± 0.011 | 0.852 | 0.891 | 3.01 ± 0.05 |
 | `D` | 0.858 ± 0.009 | 0.849 | 0.880 | 2.99 ± 0.05 |
@@ -35,8 +35,8 @@ Last benchmark was ran on 0
 
 ## Interpreted
 
-| Language | Mean [s] | Min [s] | Max [s] |
-|:---|:---:|---:|---:|---:|
+| Language | Mean [s] | Min [s] | Max [s] | Relative |
+|:---|:---:|---:|---:|---:|---:|
 | `Clojure` | 1.802 ± 0.011 | 1.781 | 1.819 | 89.94 ± 5.30 |
 | `Dart` | 0.541 ± 0.024 | 0.508 | 0.576 | 27.02 ± 2.00 |
 | `Javascript (node)` | 0.622 ± 0.011 | 0.610 | 0.646 | 31.04 ± 1.90 |
@@ -54,8 +54,8 @@ Last benchmark was ran on 0
 
 ## Shell
 
-| Language | Mean [s] | Min [s] | Max [s] |
-|:---|:---:|---:|---:|---:|
+| Language | Mean [s] | Min [s] | Max [s] | Relative |
+|:---|:---:|---:|---:|---:|---:|
 | `Bash*` | 11.792 ± 0.096 | 11.611 | 11.952 | 9399.19 ± 2268.42 |
 | `Dash` | 0.001 ± 0.000 | 0.001 | 0.002 | 1.00 |
 | `Ion` | 0.002 ± 0.000 | 0.002 | 0.003 | 1.78 ± 0.54 |
@@ -63,8 +63,8 @@ Last benchmark was ran on 0
 
 ## WASM
 
-| Language | Mean [s] | Min [s] | Max [s] |
-|:---|:---:|---:|---:|---:|
+| Language | Mean [s] | Min [s] | Max [s] | Relative |
+|:---|:---:|---:|---:|---:|---:|
 | `Wasmer` | 0.339 ± 0.077 | 0.263 | 0.438 | 1.04 ± 0.24 |
 | `Wasmtime` | 0.324 ± 0.006 | 0.321 | 0.340 | 1.00 |
 
