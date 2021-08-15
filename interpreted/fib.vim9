@@ -1,0 +1,11 @@
+vim9script
+
+def Fib(nr: number): number
+    if nr < 2
+        return nr
+    else
+        return Fib(nr - 1) + Fib(nr - 2)
+    endif
+enddef
+
+echo Fib(40)

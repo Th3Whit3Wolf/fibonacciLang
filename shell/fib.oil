@@ -1,0 +1,23 @@
+shopt --unset parse_equals
+
+fib() {
+    if test $1 -le 1; then
+        echo $1
+    else
+        output=1
+        previous=0
+        index=2
+        end=$(($i+1))
+
+        while test $index -ne $end; do
+            temp=$output
+            output=$((output + $previous))
+            previous=$temp
+            index=$(($index + 1))
+        done
+        echo $output
+    fi
+}
+
+i=40
+fib $i
